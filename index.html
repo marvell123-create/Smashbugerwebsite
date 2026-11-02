@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smashburger | Better Burger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    <span>Fall just got colder. Pumpkin Spice Shake is here!</span>
+    <a href="#menu">ORDER NOW →</a>
+    <button id="closeAnnouncement" aria-label="Close announcement">×</button>
+  </div>
+
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <a class="logo" href="#home">
+      <span>SMASH</span><strong>BURGER<sup>®</sup></strong>
+      <small>BELIEF IS IN THE BITE™</small>
+    </a>
+
+    <button class="sign-in" id="signIn">SIGN IN</button>
+    <button class="cart" id="cart" aria-label="Shopping cart">🛒</button>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#menu">Our Menu</a>
+    <a href="#locations">Locations</a>
+    <a href="#rewards">SmashRewards</a>
+    <a href="#catering">Catering</a>
+  </nav>
+
+  <section class="order-bar" id="locations">
+    <div class="location-label">📍 <span>CHOOSE A LOCATION TO ORDER</span></div>
+    <button class="order-button" id="orderNow">ORDER NOW</button>
+  </section>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESH. HOT. DELICIOUS.</p>
+        <h1>NEW YORK'S FAVORITE <span>FLAVOR.</span></h1>
+        <p class="description">
+          Fresh ingredients, juicy smashed burgers, and bold flavors.
+          Come hungry and experience the taste of a real Smashburger.
+        </p>
+        <a href="#menu" class="primary-button">EXPLORE OUR MENU</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85"
+          alt="Juicy cheeseburger with fresh toppings">
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <p class="eyebrow">MADE FRESH. MADE FOR YOU.</p>
+      <h2>MEET YOUR <span>NEW FAVORITE.</span></h2>
+
+      <div class="food-grid">
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Classic cheeseburger">
+          <h3>CLASSIC SMASH</h3>
+          <p>Big flavor, crispy edges, and melted cheese.</p>
+          <button class="food-button" data-item="Classic Smash">CHOOSE THIS</button>
+        </article>
+
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=700&q=80" alt="Double burger">
+          <h3>DOUBLE SMASH</h3>
+          <p>Double the beef. Double the satisfaction.</p>
+          <button class="food-button" data-item="Double Smash">CHOOSE THIS</button>
+        </article>
+
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Golden crispy fries">
+          <h3>CRISPY FRIES</h3>
+          <p>Golden, crispy, and perfect for sharing.</p>
+          <button class="food-button" data-item="Crispy Fries">CHOOSE THIS</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="rewards" id="rewards">
+      <div>
+        <p class="eyebrow">GOOD FOOD. GREAT REWARDS.</p>
+        <h2>SMASH MORE.<br><span>EARN MORE.</span></h2>
+        <p>Discover rewards and special offers on your next visit.</p>
+        <button class="primary-button" id="rewardsButton">JOIN SMASHREWARDS</button>
+      </div>
+    </section>
+
+    <section class="catering" id="catering">
+      <h2>BRING THE <span>FLAVOR.</span></h2>
+      <p>Make your next gathering a little more delicious.</p>
+      <button class="primary-button" id="cateringButton">EXPLORE CATERING</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-logo" href="#home">SMASH<span>BURGER</span></a>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#locations">Locations</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#catering">Catering</a>
+    </div>
+    <p>Fresh flavor. Made to satisfy.</p>
+    <small>Unofficial website recreation project. Not affiliated with Smashburger.</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
